@@ -1,13 +1,12 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Users, DollarSign, BookOpen, Mentoring, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
+import { Rocket, Users, DollarSign, BookOpen, User, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
 
 export const StartupSupport = () => {
   const supportFeatures = [
     {
-      icon: Mentoring,
+      icon: User,
       title: "Expert Mentorship",
       description: "Connect with industry veterans and successful entrepreneurs who guide you through every step"
     },
