@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Rocket } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
               <Rocket className="w-5 h-5 text-white" />
             </div>
@@ -19,7 +20,7 @@ export const Header = () => {
               ProjectBridge
             </span>
             <Badge variant="secondary" className="hidden sm:inline-flex">Beta</Badge>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors">
@@ -37,9 +38,11 @@ export const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost">Sign In</Button>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Get Started
+            <Button variant="ghost" asChild>
+              <Link to="/signin">Sign In</Link>
+            </Button>
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" asChild>
+              <Link to="/signup">Get Started</Link>
             </Button>
           </div>
 
@@ -67,9 +70,11 @@ export const Header = () => {
                 Startup Support
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost">Sign In</Button>
-                <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  Get Started
+                <Button variant="ghost" asChild>
+                  <Link to="/signin">Sign In</Link>
+                </Button>
+                <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" asChild>
+                  <Link to="/signup">Get Started</Link>
                 </Button>
               </div>
             </nav>
