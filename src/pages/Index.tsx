@@ -5,9 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Users, Lightbulb, TrendingUp, Star, ChevronRight, Rocket, Target, Network } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { ProjectShowcase } from "@/components/ProjectShowcase";
-import { FeatureSection } from "@/components/FeatureSection";
-import { StartupSupport } from "@/components/StartupSupport";
+import { FeaturedProducts } from "@/components/FeaturedProducts";
+import { ImpactMotive } from "@/components/ImpactMotive";
+import { GlobalCollaborations } from "@/components/GlobalCollaborations";
+import { CommunityConnect } from "@/components/CommunityConnect";
+import { HowItWorks } from "@/components/HowItWorks";
+import { WhatWeProvide } from "@/components/WhatWeProvide";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -15,9 +18,12 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <Header />
       <Hero />
-      <ProjectShowcase />
-      <FeatureSection />
-      <StartupSupport />
+      <FeaturedProducts />
+      <ImpactMotive />
+      <GlobalCollaborations />
+      <CommunityConnect />
+      <HowItWorks />
+      <WhatWeProvide />
       <Footer />
     </div>
   );

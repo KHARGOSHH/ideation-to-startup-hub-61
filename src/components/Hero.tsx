@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Play, Star, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, Play, Star, Users, TrendingUp, Sparkles, Globe, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Hero = () => {
@@ -12,58 +12,69 @@ export const Hero = () => {
       
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <Badge className="mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
-            <Star className="w-3 h-3 mr-1" />
-            Connecting Innovation with Opportunity
+          <Badge className="mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 animate-pulse">
+            <Sparkles className="w-3 h-3 mr-1" />
+            AMOGH - Ever Useful Platform
           </Badge>
           
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-            Bridge Your{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Ideas
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in">
+            Connect{" "}
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
+              Innovation
             </span>{" "}
-            to the World
+            with{" "}
+            <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              Opportunity
+            </span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Connect students with businesses to transform innovative projects into 
-            real-world products and services. Launch your startup journey today.
+          <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in delay-200">
+            A revolutionary platform where students, businesses, PhD researchers, premium professors, and freelancers 
+            collaborate to transform innovative projects into sustainable solutions. Join the future of collaborative innovation.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg" asChild>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-scale-in delay-300">
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg transform transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-xl" asChild>
               <Link to="/signup">
-                Start as Student
+                <Rocket className="mr-2 w-5 h-5" />
+                Start Your Journey
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 px-8 py-3 text-lg hover:bg-gray-50">
+            <Button size="lg" variant="outline" className="border-2 px-8 py-3 text-lg hover:bg-gray-50 transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
               <Play className="mr-2 w-5 h-5" />
-              Explore as Business
+              Explore Platform
             </Button>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mx-auto mb-3">
-                <Users className="w-6 h-6 text-blue-600" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in delay-500">
+            <div className="text-center transform transition-all duration-500 hover:scale-110">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mx-auto mb-3 shadow-lg">
+                <Users className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900">10K+</div>
-              <div className="text-gray-600">Students</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">25K+</div>
+              <div className="text-gray-600 text-sm">Students & Researchers</div>
             </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-full mx-auto mb-3">
-                <TrendingUp className="w-6 h-6 text-purple-600" />
+            <div className="text-center transform transition-all duration-500 hover:scale-110">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-3 shadow-lg">
+                <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900">500+</div>
-              <div className="text-gray-600">Projects</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">1.2K+</div>
+              <div className="text-gray-600 text-sm">Active Projects</div>
             </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-pink-100 rounded-full mx-auto mb-3">
-                <Star className="w-6 h-6 text-pink-600" />
+            <div className="text-center transform transition-all duration-500 hover:scale-110">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mx-auto mb-3 shadow-lg">
+                <Star className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900">150+</div>
-              <div className="text-gray-600">Businesses</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">500+</div>
+              <div className="text-gray-600 text-sm">Premium Mentors</div>
+            </div>
+            <div className="text-center transform transition-all duration-500 hover:scale-110">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mx-auto mb-3 shadow-lg">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">200+</div>
+              <div className="text-gray-600 text-sm">Global Businesses</div>
             </div>
           </div>
         </div>
