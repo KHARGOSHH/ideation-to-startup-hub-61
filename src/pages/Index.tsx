@@ -8,8 +8,10 @@ import { Hero } from "@/components/Hero";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { ImpactMotive } from "@/components/ImpactMotive";
 import { GlobalCollaborations } from "@/components/GlobalCollaborations";
+import { TrustedByLeaders } from "@/components/TrustedByLeaders";
 import { CommunityConnect } from "@/components/CommunityConnect";
 import { HowItWorks } from "@/components/HowItWorks";
+import { UpcomingPhase } from "@/components/UpcomingPhase";
 import { WhatWeProvide } from "@/components/WhatWeProvide";
 import { Footer } from "@/components/Footer";
 
@@ -21,8 +23,10 @@ const Index = () => {
       <FeaturedProducts />
       <ImpactMotive />
       <GlobalCollaborations />
+      <TrustedByLeaders />
       <CommunityConnect />
       <HowItWorks />
+      <UpcomingPhase />
       <WhatWeProvide />
       <Footer />
     </div>
