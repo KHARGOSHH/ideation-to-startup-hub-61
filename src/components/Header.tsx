@@ -41,18 +41,23 @@ export const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" className="text-slate-600 hover:text-slate-800 hover:bg-slate-100 hover:scale-105 transition-all duration-300">
-              <ShoppingCart className="w-4 h-4 mr-2" />
-              Cart
+            <Button variant="ghost" className="text-slate-600 hover:text-slate-800 hover:bg-slate-100 hover:scale-105 transition-all duration-300" asChild>
+              <Link to="/cart">
+                <ShoppingCart className="w-4 h-4 mr-2" />
+                Cart
+              </Link>
             </Button>
             <Button variant="ghost" className="text-slate-600 hover:text-slate-800 hover:bg-slate-100 hover:scale-105 transition-all duration-300" asChild>
               <Link to="/signin">Sign In</Link>
             </Button>
             <Button variant="ghost" className="text-slate-600 hover:text-slate-800 hover:bg-slate-100 hover:scale-105 transition-all duration-300" asChild>
-              <Link to="/admin">
+              <Link to="/profile">
                 <User className="w-4 h-4 mr-2" />
-                Admin
+                Profile
               </Link>
+            </Button>
+            <Button variant="ghost" className="text-slate-600 hover:text-slate-800 hover:bg-slate-100 hover:scale-105 transition-all duration-300" asChild>
+              <Link to="/admin">Admin</Link>
             </Button>
             <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-white" asChild>
               <Link to="/signup">Join</Link>
@@ -83,18 +88,23 @@ export const Header = () => {
                 Connect
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="text-slate-600 hover:text-slate-800 justify-start">
-                  <ShoppingCart className="w-4 h-4 mr-2" />
-                  Cart
+                <Button variant="ghost" className="text-slate-600 hover:text-slate-800 justify-start" asChild>
+                  <Link to="/cart">
+                    <ShoppingCart className="w-4 h-4 mr-2" />
+                    Cart
+                  </Link>
                 </Button>
                 <Button variant="ghost" className="text-slate-600 hover:text-slate-800 justify-start" asChild>
                   <Link to="/signin">Sign In</Link>
                 </Button>
                 <Button variant="ghost" className="text-slate-600 hover:text-slate-800 justify-start" asChild>
-                  <Link to="/admin">
+                  <Link to="/profile">
                     <User className="w-4 h-4 mr-2" />
-                    Admin
+                    Profile
                   </Link>
+                </Button>
+                <Button variant="ghost" className="text-slate-600 hover:text-slate-800 justify-start" asChild>
+                  <Link to="/admin">Admin</Link>
                 </Button>
                 <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600" asChild>
                   <Link to="/signup">Join</Link>
