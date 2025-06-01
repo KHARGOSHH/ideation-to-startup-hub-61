@@ -6,7 +6,7 @@ import { CommunityConnect } from "@/components/CommunityConnect";
 
 const Community = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
       <Header />
       <CommunityConnect />
       <Footer />

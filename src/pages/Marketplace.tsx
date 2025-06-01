@@ -8,7 +8,7 @@ import { FilterSidebar } from "@/components/marketplace/FilterSidebar";
 
 const Marketplace = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
       <Header />
       <MarketplaceHero />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">

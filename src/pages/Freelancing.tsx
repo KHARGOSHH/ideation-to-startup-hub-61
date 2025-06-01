@@ -8,7 +8,7 @@ import { FreelanceStats } from "@/components/freelancing/FreelanceStats";
 
 const Freelancing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       <Header />
       <FreelancingHero />
       <FreelanceStats />

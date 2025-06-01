@@ -15,7 +15,7 @@ import { Chatbot } from "@/components/Chatbot";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       <Header />
       <Hero />
       <FeaturedProducts />
