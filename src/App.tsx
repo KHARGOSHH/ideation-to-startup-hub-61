@@ -7,6 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Marketplace from "./pages/Marketplace";
+import Freelancing from "./pages/Freelancing";
+import Sustainable from "./pages/Sustainable";
+import Community from "./pages/Community";
+import Admin from "./pages/Admin";
+import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +25,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/freelancing" element={<Freelancing />} />
+          <Route path="/sustainable" element={<Sustainable />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
