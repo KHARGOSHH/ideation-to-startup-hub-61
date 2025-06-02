@@ -25,4 +25,8 @@ export default defineConfig(({ mode }) => ({
     include: /src\/.*\.[jt]sx?$/,
     exclude: [],
   },
+  // Explicitly disable TypeScript checking for node config
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(mode)
+  }
 }));
